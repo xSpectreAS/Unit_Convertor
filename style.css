@@ -1,0 +1,79 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: gray;
+       }
+
+h3{
+  text-align: center;
+}
+
+input{
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+  border: 1px groove;
+  border-color: gray;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  }
+     
+input[type=button] {
+  line-break: normal;
+  margin-top: 10px;
+  background-color: #E84A5F;
+  border-radius: 5px;
+  border-color: none;
+  width: 20%;
+  padding: 5px;
+  color: white;
+  font-style: bold;
+  outline: none;
+  margin-left: 150px;
+  margin-right: 50px;
+  }
+  
+input::-webkit-input-placeholder { 
+     opacity: 0.5;
+     text-align: center;
+     color: gray;
+     }
+
+#grpSelect{
+  background-color: transparent;
+  border-radius: 5px;
+  margin: auto;
+  width: 100%;
+  border: 1px groove;
+  border-color: gray;
+  padding: 10px;
+  box-shadow: transparent;
+  outline-offset: 0px;
+  text-align: left;
+  color: gray;
+}
+
+Select{
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 100%;
+  border: 1px groove;
+  border-color: gray;
+  padding: 10px;
+  box-shadow: transparent;
+  outline-offset: 0px;
+  text-align: center;
+  color: gray;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+
+}
+
