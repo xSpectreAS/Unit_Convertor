@@ -10,28 +10,34 @@ h3{
 input{
   border-radius: 5px;
   width: 100%;
-  margin: auto;
+  margin-bottom: 20px;
   border: 1px groove;
   border-color: gray;
-  padding: 10px;
+  padding: 12px;
   background-color: transparent;
   outline: none;
   }
+   
+   input:focus{
+    border: 1px groove red;
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+   }
      
 input[type=button] {
   line-break: normal;
-  margin-top: 10px;
-  background-color: #E84A5F;
+  margin-top: 15px;
+  background-color: red;
   border-radius: 5px;
-  border-color: none;
-  width: 20%;
-  padding: 5px;
+  border-color: transparent;
+  width: 100%;
+  padding: 10px;
   color: white;
   font-style: bold;
   outline: none;
-  margin-left: 150px;
-  margin-right: 50px;
   }
+  
   
 input::-webkit-input-placeholder { 
      opacity: 0.5;
@@ -39,10 +45,11 @@ input::-webkit-input-placeholder {
      color: gray;
      }
 
-#grpSelect{
+Select{
   background-color: transparent;
+  border-color: transparent;
   border-radius: 5px;
-  margin: auto;
+  margin-bottom: 20px;
   width: 100%;
   border: 1px groove;
   border-color: gray;
@@ -53,25 +60,44 @@ input::-webkit-input-placeholder {
   color: gray;
 }
 
-Select{
-  background-color: transparent;
-  border-radius: 5px;
-  margin-top: 30px;
-  width: 100%;
-  border: 1px groove;
-  border-color: gray;
-  padding: 10px;
-  box-shadow: transparent;
-  outline-offset: 0px;
-  text-align: center;
-  color: gray;
+select.minimal {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px groove #dfdfdf;
+  box-shadow: none;
+  outline: none;
 }
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
+
+select.minimal:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px groove red;
+  box-shadow: none;
+  outline: none;
+}
+
+
+select.minimal.focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+footer {
+   position: fixed; 
+   padding: 10px 10px 0px 10px; 
+   bottom: 0; 
    width: 100%;
-   text-align: center;
+   height: 40px;
 }
 
 
