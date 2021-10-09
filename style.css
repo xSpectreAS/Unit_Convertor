@@ -78,6 +78,10 @@ select.minimal.focus:-moz-focusring {
   text-shadow: 0 0 0 #000;
 }
 
+#result.thick{
+  font-weight: bold; 
+}
+
 footer {
   position: absolute;
   bottom: 0;
