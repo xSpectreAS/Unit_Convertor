@@ -1,91 +1,101 @@
 body{
-  font-family: 'Open Sans', sans-serif;
-  color: gray;
-       }
-
-h3{
-  text-align: center;
-}
-
-input{
-  border-radius: 5px;
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px groove;
-  border-color: gray;
-  padding: 10px;
-  background-color: transparent;
-  outline: none;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+         }
+  
+  h3{
+    text-align: center;
   }
-   
-   input:focus{
+  
+  body {
+    width: 300px;
+    border: 5px groove gray;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -goog-ms-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 50px;
+    margin: 20px;
+    margin: auto;
+  }
+  
+  input{
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px groove;
+    border-color: gray;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    }
+     
+     input:focus{
+      border: 1px groove red;
+      box-shadow: none;
+      outline-offset: 0px;
+      outline: none;
+     }    
+    
+  input::-webkit-input-placeholder { 
+       opacity: 0.5;
+       text-align: center;
+       color: gray;
+       }
+  
+  
+  
+  Select{
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px groove gray;
+    padding: 10px;
+    box-shadow: transparent;
+    outline-offset: 0px;
+    text-align: left;
+    color: gray;
+  }
+  
+  select.minimal {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: 1px groove #dfdfdf;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  select.minimal:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
     border: 1px groove red;
     box-shadow: none;
-    outline-offset: 0px;
     outline: none;
-   }    
+  }
   
-input::-webkit-input-placeholder { 
-     opacity: 0.5;
-     text-align: center;
-     color: gray;
-     }
-
-
-
-Select{
-  background-color: transparent;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  width: 100%;
-  border: 1px groove gray;
-  padding: 10px;
-  box-shadow: transparent;
-  outline-offset: 0px;
-  text-align: left;
-  color: gray;
-}
-
-select.minimal {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 5px;
-  border: 1px groove #dfdfdf;
-  box-shadow: none;
-  outline: none;
-}
-
-select.minimal:focus {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 5px;
-  border: 1px groove red;
-  box-shadow: none;
-  outline: none;
-}
-
-
-select.minimal.focus:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
-#result.thick{
-  font-weight: bold; 
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-}
-
-
-
+  
+  select.minimal.focus:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+  
+  #result.thick{
+    font-weight: bold; 
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
